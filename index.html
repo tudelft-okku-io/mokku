@@ -620,23 +620,24 @@
 
       const tSlots = [800, 1330, 1800];
 
+      const aSlots = ["08201300", "13201730", "17502230"];
       const sSlots = ["08301300", "13301730", "18002230"];
 
       elems[day - 1].classList.add("current");
 
       if (time > tSlots[0] && time < tSlots[1]) {
         for (let i = 0; i < 8; i++) {
-          elems[i + 7].innerHTML = sSlots[0][i];
+          elems[i + 7].innerHTML = aSlots[0][i];
           elems[i + 15].innerHTML = sSlots[0][i];
         }
       } else if (time > tSlots[1] && time < tSlots[2]) {
         for (let i = 0; i < 8; i++) {
-          elems[i + 7].innerHTML = sSlots[1][i];
+          elems[i + 7].innerHTML = aSlots[1][i];
           elems[i + 15].innerHTML = sSlots[1][i];
         }
       } else {
         for (let i = 0; i < 8; i++) {
-          elems[i + 7].innerHTML = sSlots[2][i];
+          elems[i + 7].innerHTML = aSlots[2][i];
           elems[i + 15].innerHTML = sSlots[2][i];
         }
       }
