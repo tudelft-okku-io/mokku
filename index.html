@@ -623,7 +623,7 @@
       const aSlots = ["08201300", "13201730", "17502230"];
       const sSlots = ["08301300", "13301730", "18002230"];
 
-      elems[day - 1].classList.add("current");
+      elems[(day + 6) % 7].classList.add("current");
 
       if (time > tSlots[0] && time < tSlots[1]) {
         for (let i = 0; i < 8; i++) {
